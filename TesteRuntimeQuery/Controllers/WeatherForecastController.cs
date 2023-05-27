@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using TesteRuntimeQuery.Data;
 using TesteRuntimeQuery.Models;
 using PowerQuery.Core;
+using CustomGrouping;
 
 namespace TesteRuntimeQuery.Controllers
 {
@@ -52,6 +53,17 @@ namespace TesteRuntimeQuery.Controllers
                     o.ExcludeByName = new[] { "Id" };
                 })
                 .ToList();
+        }
+
+        [HttpGet("grouping")]
+        public IActionResult GroupTestings()
+        {
+            var data = _databaseContext.GroupTestingClass
+                .GroupByClass(nameof(GroupTestingClass.Id))
+                .Select(x => new { count = x.Count(), x.Key })
+                .ToList();
+
+            return Ok(data);
         }
     }
 }

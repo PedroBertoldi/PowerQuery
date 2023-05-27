@@ -5,7 +5,9 @@ VisualStudioVersion = 17.3.32819.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TesteRuntimeQuery", "TesteRuntimeQuery\TesteRuntimeQuery.csproj", "{297BA56A-86B4-4E1D-B390-9FC65ED74460}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerQuery", "PowerQuery\PowerQuery.csproj", "{279CA3CD-F594-4A19-88BA-73C9EA782472}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PowerQuery", "PowerQuery\PowerQuery.csproj", "{279CA3CD-F594-4A19-88BA-73C9EA782472}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomGrouping", "CustomGrouping\CustomGrouping.csproj", "{1CB27603-2CCA-42C7-AE40-DACE51B307F5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{279CA3CD-F594-4A19-88BA-73C9EA782472}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{279CA3CD-F594-4A19-88BA-73C9EA782472}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{279CA3CD-F594-4A19-88BA-73C9EA782472}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CB27603-2CCA-42C7-AE40-DACE51B307F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CB27603-2CCA-42C7-AE40-DACE51B307F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CB27603-2CCA-42C7-AE40-DACE51B307F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CB27603-2CCA-42C7-AE40-DACE51B307F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
