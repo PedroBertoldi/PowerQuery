@@ -7,8 +7,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using TesteRuntimeQuery.Data;
 using TesteRuntimeQuery.Models;
-using PowerQuery.Core;
 using CustomGrouping;
+using PowerQueryV2;
 
 namespace TesteRuntimeQuery.Controllers
 {
@@ -48,10 +48,7 @@ namespace TesteRuntimeQuery.Controllers
         {
             return _databaseContext.TestModel
                 .Include(x => x.TestChildModels)
-                .SearchForTermComplex(param, o =>
-                {
-                    o.ExcludeByName = new[] { "Id" };
-                })
+                .QueryV2(param)
                 .ToList();
         }
 

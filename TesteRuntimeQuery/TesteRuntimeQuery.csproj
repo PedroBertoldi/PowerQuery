@@ -17,7 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CustomGrouping\CustomGrouping.csproj" />
-    <ProjectReference Include="..\PowerQuery\PowerQuery.csproj" />
+    <ProjectReference Include="..\PowerQueryV2\PowerQueryV2.csproj" />
   </ItemGroup>
 
 </Project>
